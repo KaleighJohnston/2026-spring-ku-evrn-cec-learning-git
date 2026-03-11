@@ -21,3 +21,5 @@ mlo_data %>%
 #for ggplot you need 1. data 2. aesthetics 3. geometry
 
 ggsave("output/ggplot_keeling.png")
+
+
