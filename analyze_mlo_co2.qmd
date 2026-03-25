@@ -28,7 +28,7 @@ Now that the data are loaded, we will make a plot of time on the x axis and CO2 
 ```{r}
 #| label: plot-co2
 
-#make the plot
+# make the plot
 mlo_data %>%
   filter(CO2>0) %>%
   ggplot(aes(x=Date.1,
@@ -36,7 +36,8 @@ mlo_data %>%
   geom_line()+
   labs(title = "CO2 concentration at MLO over time",
        x = "Year",
-       y = "Carbon Dioxide Concentration")
+       y = "Carbon Dioxide Concentration") +
+  theme_classic()
 ```
 
 The concentration of carbon dioxide goes up strongly over time from the first measurements in the late 1950s. It also shows a jigsaw pattern from the Northern Hemisphere deciduous leaf changes over the course of the year.
