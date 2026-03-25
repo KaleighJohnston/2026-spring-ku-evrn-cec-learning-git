@@ -8,7 +8,7 @@ execute:
   warning: false
 ---
 
-##Analysis of CO2 at Maunaloa over time
+## Analysis of CO2 at Maunaloa over time
 
 This analysis will look at the concentration of CO2 at Maunaloa Observatory over time.
 
@@ -26,7 +26,7 @@ mlo_data <- read.csv("data/monthly_in_situ_co2_mlo_cleaned.csv")
 Now that the data are loaded, we will make a plot of time on the x axis and CO2 concentration on the y axis using ggplot.
 
 ```{r}
-#\ label: plot-co2
+#| label: plot-co2
 
 #make the plot
 mlo_data %>%
